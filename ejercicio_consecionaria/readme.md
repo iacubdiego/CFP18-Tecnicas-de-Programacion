@@ -18,7 +18,6 @@ Por último, nuestro objeto literal debe tener un atributo llamado autos que con
 Etapa 2
 
 Ahora que la concesionaria tiene los autos, es posible crear la funcionalidad buscarAuto que reciba por parámetro la patente y devuelva el auto al cual le corresponde. En caso de no encontrar el mismo, deberá retornar null.
-Para que todo funcione tenés que agregar el código que escribiste en el ejercicio anterior.
 
 ----------------------------------------------------------------
 27/09
@@ -26,12 +25,11 @@ Para que todo funcione tenés que agregar el código que escribiste en el ejerci
 Etapa 3
 Ahora, María les pide que agreguen la funcionalidad de venderAuto que recibe la patente y, en caso de encontrar al automóvil, le asigna el estado de vendido.
 ¿Cómo lo resuelven?
-Recordatorio: Para comenzar tenés que agregar el código que escribiste en el ejercicio anterior. Para resolver esta nueva funcionalidad, tendrás que utilizar la función buscarAuto.
+Recordatorio: Para resolver esta nueva funcionalidad, tendrás que utilizar la función buscarAuto.
 
 Etapa 4
 La primera es poder contar, como concesionaria, con la habilidad de poder tener la lista de autos para la venta. A lo cual, María, cree que es una tarea sencilla que Juan y vos pueden encarar solos, usando la función autosParaLaVenta, aunque por las dudas ella les recuerda que no deberían de aparecer los autos que ya fueron vendidos.
-Para comenzar, tenés que agregar el código que escribiste en el ejercicio anterior. Tené en cuenta que estamos optimizando nuestro código, por lo cual, deberíamos utilizar el método filter.
-autosParaLaVenta: function (){ let autos = this.autos let autosEnVenta = autos.filter(function(auto){ return auto.vendido == false }) return autosEnVenta },
+Tené en cuenta que estamos optimizando nuestro código, por lo cual, deberíamos utilizar el método filter.
 
 Etapa 5
 El cliente le pidió saber cuánto dinero generaron las ventas.
