@@ -48,3 +48,13 @@ capacidadDePagoEnCuotas: 20000,
 capacidadDePagoTotal: 100000
 }
 
+Etapa 8: 
+Ahora, te comprometiste a realizarla. Así que manos a la obra. Hay que escribir la función autosQuePuedeComprar, que recibe una persona y devuelve la lista de autos que puede comprar.
+
+La función debe de realizar los siguientes pasos:
+
+1) Obtener los autos para la venta
+
+2) Por cada uno de los autos debe de probar si la persona puede comprarlo, ¿ya hay alguna funcionalidad que me permita hacer esto?.
+
+3) Luego debemos retornar los que pueda comprar, ¿hay alguna manera de poder filtrar la lista de autos para la venta del punto 1 con el paso 2?

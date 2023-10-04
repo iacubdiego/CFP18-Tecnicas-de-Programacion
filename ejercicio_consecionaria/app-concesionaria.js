@@ -1,8 +1,9 @@
-
 const autos = require("./autos")
+const clientes = require("./clientes")
 
 const concesionaria = {
     autos: autos,
+    clientes: clientes,
     buscarAuto(patenteDada) {
         for (let i = 0; i < autos.length; i++) {
             // const element = autos[i];
@@ -44,9 +45,25 @@ const concesionaria = {
         
         totalVendido = autosVendidos.reduce((total, element) => total + element.precio,0)
         return totalVendido
+    },
+    puedeComprar(autos, clientes){
+        if (autos.precio <= clientes.capacidadDePagoTotal && (autos.precio / autos.cuotas) <= clientes.capacidadDePagoEnCuotas){
+            return true
+        } else {
+            return false
+        }
+    },
+    autosQuePuedeComprar(clientes){
+        let autosDisponibles = this.autosParaLaVenta()
+        let autosQuePuedeComprar = autosDisponibles.filter((autos)=> {
+            return (this.puedeComprar(autos, clientes)) === true
+        })
+        return autosQuePuedeComprar
     }
 }
 // console.log(concesionaria.autos[0].patente)
 // console.log(concesionaria.venderAuto("APL123"))
 // console.log(autos[0])
-console.log(concesionaria.totalDeVentas())
+// console.log(concesionaria.totalDeVentas())
+// console.log(concesionaria.puedeComprar(autos[1],clientes[0]))
+console.log(concesionaria.autosQuePuedeComprar(clientes[1]))
