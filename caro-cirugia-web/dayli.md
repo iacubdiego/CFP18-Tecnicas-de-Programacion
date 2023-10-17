@@ -7,11 +7,11 @@ Fecha de primer reunión: 11/10/23
    - Katherine Fernández de la Cruz
    - Carolina Maffi
 3) Se definen fechas de los sprints:
-   a) 13/10/23: Servidor corriendo.
-   b) 03/11/23: HTML y CSS
-   c) 10/11/23: Script.
-   d) 24/11/23: Controladores y rutas (CRUD).
-   e) 01/12/23: API.
+   - 13/10/23: Servidor corriendo.
+   - 03/11/23: HTML y CSS
+   - 10/11/23: Script.
+   - 24/11/23: Controladores y rutas (CRUD).
+   - 01/12/23: API.
 4) Se realizó un cuadro sinóptico resumiendo lo que se debe trabajar en Back End y Front End.
 5) Se definen las tareas a realizar por cada integrante, para la primer fecha: 
    - Ignacio Zanella: Wireframe sobre index.
