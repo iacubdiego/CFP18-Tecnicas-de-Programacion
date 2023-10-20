@@ -1,15 +1,13 @@
+---
 
-------------------------------------------------------------------
-
-* Herramientas online:
+- Herramientas online:
 
 https://wireframe.cc/
 
 https://color.adobe.com/es/create/color-wheel
 
-
-* Software:
+- Software:
 
 Adobe Photoshop
 
-------------------------------------------------------------------
+---
