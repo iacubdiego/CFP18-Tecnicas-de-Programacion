@@ -30,3 +30,23 @@ Investigación de páginas similares de referencia:
    Tienen también un facebook: https://www.facebook.com/VetCx/?locale=es_LA
 8. https://www.instagram.com/clinicaveterinarialasbrisas/?hl=es:
    Otra página de instagram con muy buen marketing.
+
+                                                               Parte Fede
+
+ Para la configuración del ESLINT es necesario usar en la consola del proyecto "npm i -D eslint" y luego aceptar e instalar las dependencias que necesite. Luego podemos configurar de qué forma se va a utilizar utilizando su propia herramienta, para esto tiramos en consola "npx eslint --init"
+ De esta forma deberemos ir seleccionando las opciones que nos ofrece la herramienta en la consola.
+
+ Ya podemos ver que se generan archivos como el ".eslintrc.js" que contiene toda la configuración de este linter. Ahora ya podemos corregir los errores en nuestro código, pero si queremos que nos marque estos errores deberemos instalar la extención de ESLint.
+
+ En el archivo de la configuración del ESLint le agregué una regla donde nos marque como advertencia (warn) si encuentra variantes que no se están usando en nuestro código. Por supuesto podemos agregar o sacar las reglas que consideremos convenientes.
+
+ Por otro lado, podemos usar Prettier para que nuestro código sea lindo y ordenado. Para esto "npm i -D prettier" Luego instalamos Prettier (todxs ya deberíamos tenerlo instalado jeje).
+
+ Para que todo funcione correctamente se recomienda ir a configuración del VSCode y activamos la opción de "Format on save" y chequeamos que quede puesto solo para "file" en el renglón de abajo.
+
+ Por último, para hacer que coexistan correctamente ESLint y Prettier tenemos que hacer la siguiente magia: instalamos el paquete "npm i -D eslint-config-prettier" y luego volvemos a .eslintrc.js y en la parte de "extends" le agregamos "eslint-config-prettier" y listo! de esta manera se queda con las reglas de Prettier por encima de las de ESLint.
+
+ Mentira, no era lo último. Ahora sí, como cereza del postre. Agregué dos scripts en "package.json" para que simplemente usando en consola "npm run (nombre del script)" ejecute los mismos de manera automática. El script de format, como su nombre lo dice, formatea los archivos. Y el script de lint es para corregir (hacer linting) de todos estos archivos. Por supuesto creamos .prettierignore y .eslintignore para agregar los archivos que no queremos que se formateen ni se modifiquen, por ejemplo los que se van modificando automáticamente. Para esto simplemente los añadimos ahí.
+
+ Fin del tutorial. Ante cualquier consulta consulten con el profe Diego :D
+ Saludos! <3
