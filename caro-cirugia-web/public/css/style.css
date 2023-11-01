@@ -67,20 +67,92 @@ img {
 /* ------------------ FIN SERVICIOS ---------------------------------------- */
 
 /* ------------------ RESEÑA y SMOKE ---------------------------------------- */
-.resenia, .smoke {
+
+.resenia {
+  background-color: #39363D;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 10px;
+}
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #f704f7, #65013a);
+  color: #fff;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #380b38, #2e0118);
+  text-decoration: none;
+  margin-top: 5px;
+  padding: 10px 5px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  opacity: 80%;
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  color: black;
+}
+
+.txt-resenia {
+  /* position: absolute; */
+  /* bottom: -50px; */
+  overflow: hidden;
+  /* display: none; */
+  opacity: 0;
+}
+
+.card .txt-resenia:hover {
+ 
+  bottom: 0px;
+  overflow:visible;
+  display: block;
+  opacity: 1;
+}
+
+
+
+/* .resenia{
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+/* ------------ */
+
+
+.smoke {
   display: grid;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     place-items: center;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.resenia{
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.smoke{
-  grid-template-columns: repeat(3, 1fr);
-
+.smoke-items {
+  background-color: #807e7f;
+  height: 200px;
 }
 
 /* ------------------ FIN RESEÑA y SMOKE ---------------------------------------- */
@@ -106,10 +178,6 @@ footer {
     float: right;
     display: block;
   }
-  
-}
-
-@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -123,4 +191,20 @@ footer {
   }
 }
 
+@media screen and (max-width: 600px) {
+  
+}
 
+/* Responsive media queries */
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+    .card {
+    width: 80%;
+  }
+}
