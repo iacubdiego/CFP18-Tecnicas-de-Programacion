@@ -69,71 +69,108 @@ img {
 /* ------------------ RESEÑA y SMOKE ---------------------------------------- */
 
 .resenia {
-  background-color: #39363D;
+  position: relative;
+  /* background-color: hsla(266, 6%, 23%, 1); */
+  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), hsla(266, 6%, 23%, 1));
+  /* background-image: linear-gradient(to right, hsla(266, 6%, 23%, 1), hsla(270, 83%, 41%, 1)); */
   padding: 30px;
   margin: 20px 0;
+  color: #fff;
+  height: 100vh;
+}
+
+.resenia h2 {
+  padding: 15px 0;
 }
 
 .row {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
+  align-content: flex-start;
   /* grid-template-columns: repeat(3, 1fr); */
-  gap: 10px;
+  gap: 20px;
+  padding: 12px 0 20px 0;
 }
 
 .card {
-  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
   background: #fff;
-  border: 1px solid #ccc;
-  transition: 0.3s;
-}
-
-.card-header {
-  text-align: center;
-  padding: 50px 10px;
-  background: linear-gradient(to right, #f704f7, #65013a);
-  color: #fff;
-}
-
-.card-body {
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 18px;
-  display: block;
-  color: #fff;
-  text-align: center;
-  background: linear-gradient(to right, #380b38, #2e0118);
-  text-decoration: none;
-  margin-top: 5px;
-  padding: 10px 5px;
+  border: 1px solid rgba(203, 40, 255, 1);
+  border-radius: 6px;
+  box-shadow: 5px 5px 20px black;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  opacity: 80%;
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-  color: black;
+  transform: scale(1.01);
 }
 
 .txt-resenia {
-  /* position: absolute; */
-  /* bottom: -50px; */
-  overflow: hidden;
-  /* display: none; */
+  height: 200px;
+  padding: 9%;
+  color: #fff;
+  background: hsla(0, 0%, 20%, .6);
+  font-style: italic;
+  text-indent: 1rem;
+  cursor: pointer;
+}
+
+.txt-resenia:hover {
   opacity: 0;
 }
 
-.card .txt-resenia:hover {
- 
-  bottom: 0px;
-  overflow:visible;
-  display: block;
-  opacity: 1;
+#card1 {
+  background-image: url(../img/cute-pet-names.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+#card1:hover :nth-child() {
+  transform: scale(1.1);
+}
 
+#card2 {
+  background-image: url(../img/health-beneiftis-of-pets-900x600.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#card3 {
+  background-image: url(../img/gp-melbourne-189974771-1500x1066.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#card4 {
+  background-image: url(../img/Pets-1-1200x800.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#card5 {
+  background-image: url(../img/iStock-1324099927.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#card6 {
+  background-image: url(../img/Pet-FAQs_dog-and-kitten.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* .resenia{
   grid-template-columns: repeat(3, 1fr);
