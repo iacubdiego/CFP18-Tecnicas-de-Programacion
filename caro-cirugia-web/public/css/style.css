@@ -71,7 +71,7 @@ img {
 .resenia {
   position: relative;
   /* background-color: hsla(266, 6%, 23%, 1); */
-  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), hsla(266, 6%, 23%, 1));
+  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(255, 255, 255));
   /* background-image: linear-gradient(to right, hsla(266, 6%, 23%, 1), hsla(270, 83%, 41%, 1)); */
   padding: 30px;
   margin: 20px 0;
@@ -89,7 +89,7 @@ img {
   flex-flow: wrap;
   align-content: flex-start;
   /* grid-template-columns: repeat(3, 1fr); */
-  gap: 20px;
+  gap: 40px;
   padding: 12px 0 20px 0;
 }
 
@@ -117,6 +117,7 @@ img {
   padding: 9%;
   color: #fff;
   background: hsla(0, 0%, 20%, .6);
+  border-radius: 6px;
   font-style: italic;
   text-indent: 1rem;
   cursor: pointer;
