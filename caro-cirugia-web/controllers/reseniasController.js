@@ -1,6 +1,6 @@
 const controlador = {
     index: (req, res) => {
-        res.send("ALGO")
+        res.send('RESEÑAS')
     }
 };
 module.exports = controlador
