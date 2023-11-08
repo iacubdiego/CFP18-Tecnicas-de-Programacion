@@ -17,7 +17,8 @@
 
 .topnav {
   overflow: hidden;
-  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(255, 255, 255));
+  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(203, 40, 255));
+  /* background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(255, 255, 255)); */
   /* background-color: #333; */
 }
 
@@ -310,9 +311,6 @@ footer img {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a {
-    color: #36363D;
-  }
 
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
