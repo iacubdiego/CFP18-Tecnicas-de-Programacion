@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +9,16 @@
 }
     body {
   margin: 2px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 /* ------------------ NAVBAR ------------------------------------------- */
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(255, 255, 255));
+  /* background-color: #333; */
 }
 
 .topnav a {
@@ -24,15 +29,16 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-weight: 600;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #9586C2;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #420a7a;
   color: white;
 }
 
@@ -43,25 +49,59 @@
 /* ------------------ FIN NAVBAR ------------------------------------------- */
 
 /* ------------------ BANNER ------------------------------------------- */
+
 .banner {
+  position: relative;
+  background: #CB28FF;
   display: grid;
   place-items: center;
 }
-img {
+
+.banner img {
+  /* position: absolute; */
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   height: auto;
   margin: 5px;
-  padding: 5px;
-  
+  padding: 50px 5px;
+  /* top: -20px; */
+}
+
+#titulo {
+  position: absolute;
+  left: 66%;
+  top: 10%;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  /* text-transform: uppercase; */
+  text-shadow: 4px 4px 7px rgba(0,0,0,0.6);
 }
 /* ------------------ FIN BANNER ------------------------------------------- */
 
 /* ------------------ SERVICIOS ------------------------------------------- */
+
 .servicios {
+  position: relative;
   padding: 15px;
   margin: 10px;
   font-size: 20px;
+  z-index: 100; 
+}
+
+.servicios-txt {
+  background: rgba(203, 40, 255, .4);
+  top: -340px;
+  position: absolute;
+  color: #ffffff;
+  width: 100%;
+  padding: 2px;
+  margin: 0;
+}
+
+.servicios-txt p {
+  padding-top: .4rem;
+  text-indent: 3rem;
 }
 
 /* ------------------ FIN SERVICIOS ---------------------------------------- */
@@ -70,13 +110,13 @@ img {
 
 .resenia {
   position: relative;
+  height: 100vh;
   /* background-color: hsla(266, 6%, 23%, 1); */
-  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(255, 255, 255));
+  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(203, 40, 255));
   /* background-image: linear-gradient(to right, hsla(266, 6%, 23%, 1), hsla(270, 83%, 41%, 1)); */
   padding: 30px;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
   color: #fff;
-  height: 100vh;
 }
 
 .resenia h2 {
@@ -182,35 +222,97 @@ img {
 
 .smoke {
   display: grid;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    place-items: center;
-    grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .smoke-items {
   background-color: #807e7f;
   height: 200px;
-}
+} 
 
 /* ------------------ FIN RESEÑA y SMOKE ---------------------------------------- */
 
 /* ------------------- FOOTER ----------------------------------------*/
 footer {
-  height: 200px;
-  background-image: linear-gradient(to bottom right, rgb(190, 166, 218), #39363D);
-  color: #f6f6f6;
-  font-size: 1.5rem;
+  top: 200px;
+  height: 250px;
+  background: #CB28FF;
+  /* background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(255, 255, 255)); */
+  /* background-image: linear-gradient(to bottom right, rgb(190, 166, 218), #39363D); */
+  color: #ffffff;
+  /* font-size: 1.5rem; */
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin: 0;
+  padding: 0 .6rem;
 }
+
+footer h2 {
+  font-size: 1.5rem;
+  padding-bottom: .8rem;
+}
+
+footer li {
+  padding-bottom: .5rem;
+  cursor: pointer;
+}
+
+footer img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
 /* ------------------- FIN FOOTER ----------------------------------------*/
 
 /* ------------------- MEDIA QUERIES ----------------------------------------*/
 
+/* Responsive media queries */
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+    height: 200px;
+  }
+  .resenia {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .txt-resenia {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .card {
+    width: 70%;
+    height: 200px;
+  }
+  
+.txt-resenia {
+  font-size: 1rem;
+  height: 200px;
+  padding: 3%;
+  text-indent: .4rem;
+}
+  .resenia {
+    height: 260vh;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .topnav a {
+    color: #36363D;
+  }
+
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -230,19 +332,5 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  
 }
 
-/* Responsive media queries */
-
-@media screen and (max-width: 1000px) {
-  .card {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 620px) {
-    .card {
-    width: 80%;
-  }
-}
