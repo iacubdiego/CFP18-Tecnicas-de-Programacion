@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 const rutaMain = require("./routes/mainRoutes")
-const rutaResenias = require("./routes/resenias")
+const rutaUser = require("./routes/userRoutes")
 
 const PORT = process.env.PORT || 3000; //variable dinamica de puerto
 const HOST = process.env.HOST || 'localhost';
@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 // 	res.sendFile(path.join(__dirname, './index.html'));
 // });
 app.use('/', rutaMain )
-app.use('/resenias', rutaResenias )
+app.use('/admin', rutaUser )
 
 // configuarcion de public static
 app.use(express.static(path.join(__dirname, 'public')));

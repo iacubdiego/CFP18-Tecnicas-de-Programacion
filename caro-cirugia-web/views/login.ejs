@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Admin</title>
 </head>
 <body>
+    <%- include ('./partials/header.ejs') %>
+
+<h2>Lista de Administradores: <%= users[0] %></h2>
+
+<div class="formulario">
     <form action="/admin" method="post">
         <br>
-        <label>Usuario:</label>
+        <label>Usuario</label>
         <br>
         <input type="text" name="usuario" id="usuario">
         <br>
-        <label>Contraseña:</label>
+        <label>Contraseña</label>
         <br>
         <input type="password" name="clave" id="clave">
         <br>
         <button type="submit">Ingresar</button>
     </form>
+</div>
     <%- include ('./partials/footer.ejs') %>
 </body>
 </html>

@@ -20,3 +20,15 @@ Fecha de primer reunión: 11/10/23
    - Katherine Fernández de la Cruz: Investigar e instalar Nodemon.
    - Carolina Maffi: Buscar otras páginas de servicios similares, que puedan servir de referencia. Realizar los daily de forma más esquemática.
 6. Próxima reunión y entrega de las tareas definidas: Miércoles 18/10/23.
+7. Viernes 10/11
+   - IZ: Creó Reseñas, le dió estilos general a la página. Estilos al banner y al footer.
+   - CM: Agregó "humo" con imágenes. Agregó estilos a cada "humo".
+   - FL: Investigando para agregar iconos y estilos.
+   - KF: Aún no se agrega contenido.
+Hablamos sobre la posibilidad de juntarnos fuera de las clases. Programar encuentros con los que estén disponibles y ayudarnos a avanzar.
+
+Ideas para mejorar: Explicar lo que cada uno aporta. Se proponen espacios para informar avances con detalle.
+
+- Agregar cronograma/sprint de tareas y temas en Trello.
+Para las próximas clases agregar contenido en las Reseñas
+- 
