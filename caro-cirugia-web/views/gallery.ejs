@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cirugías</title>
+</head>
+<body>
+    <%- include ('./partials/header.ejs') %>
+	<svg id="onda-gal1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#CB28FF" fill-opacity="1" d="M0,192L80,197.3C160,203,320,213,480,192C640,171,800,117,960,101.3C1120,85,1280,107,1360,117.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+		</path>
+	</svg>
+
+    <div class="titulo-gal">
+	    <h2>Galería de Imágenes</h2>
+    </div>
+
+	<section class="gal-gral">
+	<!-- popup -->
+	<div class="popup">
+		<!-- top bar -->
+		<div class="top-bar">
+			<p class="image-name">img1.png</p>
+			<span class="close-btn">X</span>
+		</div>
+		<!-- arrows -->
+		<button class="arrow-btn left-arrow">
+			<img src="./img/arrow.png" alt="" />
+		</button>
+		<button class="arrow-btn right-arrow">
+			<img src="./img/arrow.png" alt="" />
+		</button>
+		<!-- image -->
+		<img src="./img/img1.png" class="large-image" alt="" />
+		<!-- image-index -->
+		<h1 class="index">01</h1>
+	</div>
+
+	<div class="gallery">
+		<div class="gallery-image">
+			<img src="./img/img1.png" alt="" class="image" />
+		</div>
+		<div class="gallery-image">
+			<img src="./img/img2.png" alt="" class="image" />
+		</div>
+		<div class="gallery-image">
+			<img src="./img/img3.png" alt="" class="image" />
+		</div>
+		<div class="gallery-image">
+			<img src="./img/img4.png" alt="" class="image" />
+		</div>
+		<div class="gallery-image">
+			<img src="./img/img5.png" alt="" class="image" />
+		</div>
+		<div class="gallery-image">
+			<img src="./img/img6.png" alt="" class="image" />
+		</div>
+		<div class="gallery-image">
+			<img src="./img/img7.png" alt="" class="image" />
+		</div>
+		<div class="gallery-image">
+			<img src="./img/img8.png" alt="" class="image" />
+		</div>
+		<div class="gallery-image">
+			<img src="./img/img9.png" alt="" class="image" />
+		</div>
+	</div>
+
+	<script src="./JS/gallery-app.js"></script>
+</section>
+
+
+    <%- include ('./partials/footer.ejs') %>
+</body>
+</html>

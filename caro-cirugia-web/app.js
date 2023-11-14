@@ -4,6 +4,7 @@ const app = express();
 
 const rutaMain = require("./routes/mainRoutes")
 const rutaUser = require("./routes/userRoutes")
+const rutaGallery = require("./routes/galleryRoutes")
 
 const PORT = process.env.PORT || 3000; //variable dinamica de puerto
 const HOST = process.env.HOST || 'localhost';
@@ -17,6 +18,7 @@ app.set('view engine', 'ejs');
 // });
 app.use('/', rutaMain )
 app.use('/admin', rutaUser )
+app.use('/gallery', rutaGallery )
 
 // configuarcion de public static
 app.use(express.static(path.join(__dirname, 'public')));
