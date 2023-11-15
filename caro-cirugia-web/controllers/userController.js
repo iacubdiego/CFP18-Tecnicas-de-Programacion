@@ -11,6 +11,18 @@ const userController = {
         res.render("login", {
             users: userList
         })
+    },
+    storeUser: (req, res) => {
+        let user = req.body;
+
+        userList.push(user);
+
+        fs.writeFileSync(userListPath, JSON.stringify(userList, null, 2));
+
+        res.redirect('/panel');
     }
 };
+
+
+
 module.exports = userController

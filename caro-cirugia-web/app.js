@@ -6,6 +6,8 @@ const rutaMain = require("./routes/mainRoutes")
 const rutaUser = require("./routes/userRoutes")
 const rutaGallery = require("./routes/galleryRoutes")
 const rutaAbout = require("./routes/aboutRoutes")
+const methodOverride = require('method-override');
+
 
 const PORT = process.env.PORT || 3000; //variable dinamica de puerto
 const HOST = process.env.HOST || 'localhost';
@@ -13,6 +15,9 @@ const HOST = process.env.HOST || 'localhost';
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(methodOverride('_method'));
 
 // app.get('/', function (req, res) {
 // 	res.sendFile(path.join(__dirname, './index.html'));
