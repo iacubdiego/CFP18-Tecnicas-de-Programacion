@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Admin</title>
+    <link rel="icon" type="image/x-icon" href="./img/veterinarian_dog.png" />
+    <title>Sobre Nosotras</title>
 </head>
 <body>
     <%- include ('./partials/header.ejs') %>
 
-<h2>Lista de Administradores: <%= users[0] %></h2>
+    <svg id="onda-gal1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#CB28FF" fill-opacity="1" d="M0,192L80,197.3C160,203,320,213,480,192C640,171,800,117,960,101.3C1120,85,1280,107,1360,117.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+		</path>
+	</svg>
+<section>
 
-<div class="formulario">
-    <form action="/admin" method="post">
-        <br>
-        <label>Usuario</label>
-        <br>
-        <input type="text" name="usuario" id="usuario" required>
-        <br>
-        <label>Contraseña</label>
-        <br>
-        <input type="password" name="clave" id="clave" required>
-        <br>
-        <button type="submit">Ingresar</button>
-    </form>
-</div>
+<article id="bio-maffi">
+    <img src="" alt="">
+    <h3>Carolina Maffi</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique exercitationem dignissimos iure, explicabo eos nihil doloremque commodi minima, sed nam nemo culpa. Aspernatur suscipit porro sunt modi fuga explicabo dicta?</p>
+</article>
+
+<article id="bio-anestesista">
+    <img src="" alt="">
+    <h3>Lanes Tesista</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique exercitationem dignissimos iure, explicabo eos nihil doloremque commodi minima, sed nam nemo culpa. Aspernatur suscipit porro sunt modi fuga explicabo dicta?</p>
+</article>
+
+</section>
+
     <%- include ('./partials/footer.ejs') %>
 </body>
 </html>
