@@ -8,7 +8,7 @@ const popup = document.querySelector('.popup');
 const closeBtn = document.querySelector('.close-btn');
 const imageName = document.querySelector('.image-name');
 const largeImage = document.querySelector('.large-image');
-const imageIndex = document.querySelector('.index');
+const imageIndex = document.querySelector('.img-index');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
@@ -23,6 +23,7 @@ images.forEach((item, i) => {
 
 const updateImage = (i) => {
     let path = `./img/img${i+1}.png`;
+    console.log(`imagen nro ${i+1}`)
     largeImage.src = path;
     imageName.innerHTML = path;
     imageIndex.innerHTML = `0${i+1}`;

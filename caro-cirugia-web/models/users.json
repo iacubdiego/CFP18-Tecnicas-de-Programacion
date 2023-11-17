@@ -1,4 +1,47 @@
-[{
-    "usuario": "caro",
-    "password": "caro"
-}]
+[
+  {
+    "id": "1",
+    "imagen": "./img/img1.png",
+    "descripcion": "imagen1"
+  },
+  {
+    "id": "2",
+    "imagen": "./img/img2.png",
+    "descripcion": "imagen2"
+  },
+  {
+    "id": "3",
+    "imagen": "./img/img3.png",
+    "descripcion": "imagen3"
+  },
+  {
+    "id": "4",
+    "imagen": "./img/img4.png",
+    "descripcion": "imagen4"
+  },
+  {
+    "id": "5",
+    "imagen": "./img/img5.png",
+    "descripcion": "imagen5"
+  },
+  {
+    "id": "6",
+    "imagen": "./img/img6.png",
+    "descripcion": "imagen6"
+  },
+  {
+    "id": "7",
+    "imagen": "./img/img7.png",
+    "descripcion": "imagen7"
+  },
+  {
+    "id": "8",
+    "imagen": "./img/img8.png",
+    "descripcion": "imagen8"
+  },
+  {
+    "id": "9",
+    "descripcion": "zaraza",
+    "imagen": "./img/img9.png"
+  }
+]

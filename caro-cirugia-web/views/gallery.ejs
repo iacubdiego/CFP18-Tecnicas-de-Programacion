@@ -38,36 +38,14 @@
 		<!-- image-index -->
 		<h1 class="img-index">01</h1>
 	</div>
-
-	<div class="gallery">
-		<div class="gallery-image">
-			<img src="./img/img1.png" alt="" class="image" />
-		</div>
-		<div class="gallery-image">
-			<img src="./img/img2.png" alt="" class="image" />
-		</div>
-		<div class="gallery-image">
-			<img src="./img/img3.png" alt="" class="image" />
-		</div>
-		<div class="gallery-image">
-			<img src="./img/img4.png" alt="" class="image" />
-		</div>
-		<div class="gallery-image">
-			<img src="./img/img5.png" alt="" class="image" />
-		</div>
-		<div class="gallery-image">
-			<img src="./img/img6.png" alt="" class="image" />
-		</div>
-		<div class="gallery-image">
-			<img src="./img/img7.png" alt="" class="image" />
-		</div>
-		<div class="gallery-image">
-			<img src="./img/img8.png" alt="" class="image" />
-		</div>
-		<div class="gallery-image">
-			<img src="./img/img9.png" alt="" class="image" />
-		</div>
+<div class="gallery">
+	<% for (var i=0; i<userList.length; i++) { %>
+	<div class="gallery-image">
+				<img src=<%= userList[i].imagen %> alt="" class="image" />
+			</div>
+			<% } %>
 	</div>
+
 
 	<script src="./JS/gallery-app.js"></script>
 </section>

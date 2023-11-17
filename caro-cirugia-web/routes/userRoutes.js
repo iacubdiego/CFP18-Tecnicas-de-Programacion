@@ -1,9 +1,12 @@
 const express = require("express")
-const Router  = express.Router()
+const router  = express.Router()
 
 const userController = require("../controllers/userController")
-Router.get("/", userController.login)
 
-Router.post("/login", userController.storeUser)
+router.get("/:id", userController.getCirugiaById)
 
-module.exports = Router
+router.get("/", userController.createCirugias)
+
+router.post("/", userController.storeCirugias)
+
+module.exports = router

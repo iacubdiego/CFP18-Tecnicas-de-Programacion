@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/veterinarian_dog.png" />
+    <title>Admin</title>
+</head>
+<body>
+    <%- include ('./partials/header.ejs') %>
+
+<div class="contenedor-crud">
+<div class="gallery-crud">
+	<% for (var i=0; i<userList.length; i++) { %>
+	<div class="gallery-image-crud">
+				<img src=<%= userList[i].imagen %> alt="" class="image-crud" />
+                <div class="btn-actions">
+                    <form action="/gallery/<%= userList.id %>/edit" method="get">
+                        <button type="submit"  style="color:rgb(0, 0, 0); background: rgb(215, 236, 215); border: solid 3px black">EDITAR</button>
+                    </form>
+                    <form action="/gallery/<%= userList.id %>/delete/" method="get">
+                        <button type="submit"  style="color:rgb(0, 0, 0); background: rgb(215, 236, 215); border: solid 3px black">BORRAR</i></button>
+                    </form>
+                </div>
+            </div>
+			<% } %>
+	</div>
+
+
+<div class="formulario">
+    <form class="formu" action="/admin" method="post">
+        <br>
+        <label>ID</label>
+        <br>
+        <input type="text" name="id" id="id" required>
+        <br>
+        <label>Descripcion</label>
+        <br>
+        <input type="text" name="descripcion" id="descripcion" required>
+        <br>
+        <label>Imagen</label>
+        <br>
+        <input type="text" name="imagen" id="imagen" required>
+        <button class="btn-form" type="submit">Crear</button>
+    </form>
+</div>
+</div>
+    <%- include ('./partials/footer.ejs') %>
+</body>
+</html>

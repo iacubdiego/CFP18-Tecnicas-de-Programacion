@@ -4,22 +4,26 @@ const path = require('path');
 const userListPath = path.resolve(__dirname, '../models/users.json');
 const userList = JSON.parse(fs.readFileSync(userListPath, 'utf8'));
 
-console.log(userList)
-
 const userController = {
-    login: (req, res) => {
-        res.render("login", {
-            users: userList
-        })
+    getCirugiaById: (req, res) => {
+        let id = req.params.id;
+
+        res.send('Get product by id: ' + id);
     },
-    storeUser: (req, res) => {
+    // getAllCirugias: (req, res) => {
+    //     res.render("admin")
+    // },
+    createCirugias: (req, res) => {
+        res.render('admin', {userList});
+    },
+    storeCirugias: (req, res) => {
         let user = req.body;
 
         userList.push(user);
 
         fs.writeFileSync(userListPath, JSON.stringify(userList, null, 2));
 
-        res.redirect('/panel');
+        res.redirect('/admin');
     }
 };
 
