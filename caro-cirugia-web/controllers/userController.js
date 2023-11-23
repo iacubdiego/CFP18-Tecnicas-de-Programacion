@@ -8,23 +8,37 @@ const userController = {
     getCirugiaById: (req, res) => {
         let id = req.params.id;
 
-        res.send('Get product by id: ' + id);
+        res.send('Es la Cirugia: ' + id);
     },
-    // getAllCirugias: (req, res) => {
-    //     res.render("admin")
-    // },
     createCirugias: (req, res) => {
         res.render('admin', {userList});
     },
     storeCirugias: (req, res) => {
-        let user = req.body;
+        let user = req.body
+        let image = req.image
 
         userList.push(user);
 
         fs.writeFileSync(userListPath, JSON.stringify(userList, null, 2));
 
         res.redirect('/admin');
-    }
+    },
+    editCirugias: (req, res) => {
+        let id = req.params.id;
+        let user =
+        {
+            imagen: req.body.imagen,
+            descripcion: req.body.descripcion,
+        }
+        fs.writeFileSync(userListPath, JSON.stringify(userList, null, 2));
+
+        res.redirect('/admin');
+    },
+    deleteCirugias: (req, res) => {
+        let id = req.params.id;
+
+
+    },
 };
 
 

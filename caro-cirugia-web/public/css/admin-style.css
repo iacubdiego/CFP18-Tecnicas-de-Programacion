@@ -14,10 +14,11 @@
 
 .gallery-image-crud {
     border: solid 3px black;
+    border-radius: 8px;
     width: 100%;
     max-width: 200px;
-    height: 120px;
-    
+    height: 270px;
+    background: rgba(25, 24, 24, .3);
 }
 
 .image-crud {

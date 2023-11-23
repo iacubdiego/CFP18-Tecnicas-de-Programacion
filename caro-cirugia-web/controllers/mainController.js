@@ -1,16 +1,3 @@
-const animal = [{
-    nombre: "señor gato",
-    raza: "común europeo",
-    edad: "4 años",
-    color: "negro"
-    },
-    {
-    nombre: "señor perro",
-    raza: "mestizo",
-    edad: "2 años",
-    color: "blanco"
-    }
-]
 const fs = require('fs');
 const path = require('path');
 
@@ -19,7 +6,7 @@ const userList = JSON.parse(fs.readFileSync(userListPath, 'utf8'));
 
 const controlador = {
     index: (req, res) => {
-        res.render("index",{animal})
+        res.render("index")
     },
     about: (req, res) => {
         res.render("about")

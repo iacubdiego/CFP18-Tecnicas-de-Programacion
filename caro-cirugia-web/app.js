@@ -1,6 +1,8 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+const multer = require('multer');
+
 
 const PORT = process.env.PORT || 3000; //variable dinamica de puerto
 const HOST = process.env.HOST || 'localhost';
