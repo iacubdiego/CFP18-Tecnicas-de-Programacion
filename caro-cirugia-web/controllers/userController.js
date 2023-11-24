@@ -24,11 +24,16 @@ const userController = {
         res.redirect('/admin');
     },
     editCirugias: (req, res) => {
-        let id = req.params.id;
-        let user =
-        {
-            imagen: req.body.imagen,
-            descripcion: req.body.descripcion,
+        let id = req.body.id;
+        for (let i = 0; i < userList.length; i++) {
+            const element = userList[i];
+            if (element.id===id) {
+                element.imagen= req.body.imagen,
+                element.descripcion= req.body.descripcion
+                
+                let newUser = element
+            
+            }
         }
         fs.writeFileSync(userListPath, JSON.stringify(userList, null, 2));
 

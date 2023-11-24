@@ -5,7 +5,7 @@ const multer = require('multer')
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, '..')
+      cb(null, './public/img')
     },
     filename: function (req, file, cb) {
       cb(null,file.originalname)
@@ -22,9 +22,9 @@ router.get("/:id", userController.getCirugiaById)
 router.get("/", userController.createCirugias)
 router.post("/", uploadFile.single('archivo'), userController.storeCirugias)
 
-// router.post("/gallery/:id/edit", userController.editCirugias)
+router.post("/", userController.editCirugias)
 
-// router.post("/gallery/:id/delete", userController.deleteCirugias)
+router.post("/gallery/delete", userController.deleteCirugias)
 
 
 

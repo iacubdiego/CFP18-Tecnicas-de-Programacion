@@ -40,67 +40,33 @@
     "descripcion": "imagen8"
   },
   {
-    "id": "9",
-    "descripcion": "zaraza",
-    "imagen": "./img/img9.png"
+    "id": "imagen9",
+    "descripcion": "imagen",
+    "imagen": "validacion"
   },
   {
-    "id": "10",
-    "descripcion": "cirugia canario",
-    "imagen": "fasfsfsfd",
-    "archivo": "Captura de pantalla 2023-11-12 192412.png"
+    "id": "imagen 10",
+    "descripcion": "imagen",
+    "imagen": "katy"
   },
   {
-    "id": "11",
-    "descripcion": "captura",
-    "imagen": "./img/img9.png",
-    "archivo": "Captura de pantalla 2023-04-25 101911.png"
+    "id": "imagen 11",
+    "descripcion": "katy",
+    "imagen": "validacion"
   },
   {
-    "id": "12",
-    "descripcion": "wawa",
-    "imagen": "wawa",
-    "archivo": "Captura de pantalla 2023-04-25 101911.png"
+    "id": "imagen9",
+    "descripcion": "katy",
+    "imagen": "katy"
   },
   {
-    "id": "13",
-    "descripcion": "qwe",
-    "imagen": "qew",
-    "archivo": "Captura de pantalla 2023-04-25 101911.png"
+    "id": "imagen 11",
+    "descripcion": "imagen",
+    "imagen": "./public/img/descarga.jpg"
   },
   {
-    "id": "14",
-    "descripcion": "eqqew",
-    "imagen": "qwewe",
-    "archivo": "Captura de pantalla 2023-04-25 101911.png"
-  },
-  {
-    "id": "99",
-    "descripcion": "qw",
-    "imagen": "qw",
-    "archivo": "Captura de pantalla 2023-06-26 090122.png"
-  },
-  {
-    "id": "23",
-    "descripcion": "tr",
-    "imagen": "rt",
-    "archivo": "Captura de pantalla 2023-07-04 002516.png"
-  },
-  {
-    "id": "22",
-    "descripcion": "22",
-    "imagen": "22",
-    "archivo": "Captura de pantalla 2023-07-04 002554.png"
-  },
-  {
-    "id": "21",
-    "descripcion": "21",
-    "imagen": "21",
-    "archivo": "Captura de pantalla 2023-07-04 002759.png"
-  },
-  {
-    "id": "444",
-    "descripcion": "444",
-    "imagen": "444"
+    "id": "imagen 10",
+    "descripcion": "imagen",
+    "imagen": "./img/descarga.jpg"
   }
 ]

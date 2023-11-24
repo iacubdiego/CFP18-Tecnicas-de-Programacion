@@ -16,7 +16,7 @@
 	<div class="gallery-image-crud">
 				<img src=<%= userList[i].imagen %> alt="" class="image-crud" />
                 <div class="btn-actions">
-                    <form action="/gallery/<%= userList.id %>/edit" method="get">
+                    <form action="/?_method=PUT" method="post">
                         <label>Descripcion</label>
                         <br>
                         <input type="text" placeholder=<%= userList[i].descripcion %> name="descripcion" id="descripcion" required>
@@ -26,7 +26,7 @@
                         <input type="text" placeholder=<%= userList[i].imagen %> name="imagen" id="imagen" required>
                         <button type="submit"  style="color:rgb(0, 0, 0); background: rgb(215, 236, 215); border: solid 3px black">EDITAR</button>
                     </form>
-                    <form action="/gallery/<%= userList.id %>/delete/" method="get">
+                    <form action="/<%= userList.id %>/delete/" method="post">
                         <button type="submit"  style="color:rgb(0, 0, 0); background: rgb(215, 236, 215); border: solid 3px black">BORRAR</i></button>
                     </form>
                 </div>
