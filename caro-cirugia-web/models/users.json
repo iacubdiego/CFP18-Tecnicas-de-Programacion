@@ -1,8 +1,8 @@
 [
   {
-    "id": "1",
-    "imagen": "./img/img1.png",
-    "descripcion": "imagen1"
+    "descripcion": "grgergre",
+    "imagen": "vfgaf",
+    "id": "1"
   },
   {
     "id": "2",
@@ -68,5 +68,15 @@
     "id": "imagen 10",
     "descripcion": "imagen",
     "imagen": "./img/descarga.jpg"
+  },
+  {
+    "descripcion": "grgergre",
+    "imagen": "vfgaf",
+    "id": "1"
+  },
+  {
+    "descripcion": "grgergre",
+    "imagen": "vfgaf",
+    "id": "1"
   }
 ]

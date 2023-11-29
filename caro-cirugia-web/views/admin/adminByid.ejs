@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/veterinarian_dog.png" />
+    <title>AdminByid</title>
+</head>
+<body>
+    <%- include ('../partials/header.ejs') %>
+
+    <div class="formulario">
+    <form class="formu" action="/?_method=PUT" method="post">
+        <label>Descripcion</label>
+        <br>
+        <input type="text" placeholder=<%= userList.descripcion %> name="descripcion" id="descripcion" required>
+        <br>
+        <label>Imagen</label>
+        <br>
+        <input type="text" placeholder=<%= userList.imagen %> name="imagen" id="imagen" required>
+        
+        
+    </form>
+    <a href="/admin/<%= id %>/adminEdit">EDITAR</a>
+<!--     
+    <button class="btn-form" a href="admin/:id/adminEdit">EDITAR</button>
+    
+    <form action="/<%= userList.id %>/delete/" method="post">
+        <button class="btn-form" type="submit">BORRAR</i></button>
+    </form> -->
+
+
+
+</div>
+
+   <%- include ('../partials/footer.ejs') %>
+</body>
+</html>

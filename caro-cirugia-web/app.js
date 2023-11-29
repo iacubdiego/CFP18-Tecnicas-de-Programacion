@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000; //variable dinamica de puerto
 const HOST = process.env.HOST || 'localhost';
 
 const rutaMain = require("./routes/mainRoutes")
-const rutaUser = require("./routes/userRoutes")
+const rutaAdmin = require("./routes/adminRoutes")
 
 const methodOverride = require('method-override');
 
@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 app.use('/', rutaMain )
 app.use('/about', rutaMain )
 app.use('/gallery', rutaMain )
-app.use('/admin', rutaUser )
+app.use('/admin', rutaAdmin )
 
 
 app.listen(PORT, ()=>{
