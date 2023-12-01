@@ -24,10 +24,10 @@
                         <label>Imagen</label>
                         <br>
                         <input type="text" placeholder=<%= userList[i].imagen %> name="imagen" id="imagen" required>
-                        <button type="submit"  style="color:rgb(0, 0, 0); background: rgb(215, 236, 215); border: solid 3px black">EDITAR</button>
+                        <button class="btn-crud" type="submit" >EDITAR</button>
                     </form>
                     <form action="/<%= userList.id %>/delete/" method="post">
-                        <button type="submit"  style="color:rgb(0, 0, 0); background: rgb(215, 236, 215); border: solid 3px black">BORRAR</i></button>
+                        <button class="btn-crud" type="submit" >BORRAR</i></button>
                     </form>
                 </div>
             </div>
@@ -42,15 +42,21 @@
         <br>
         <input type="text" name="id" id="id" required>
         <br>
-        <label>Descripcion</label>
+        <label>Descripción</label>
         <br>
         <input type="text" name="descripcion" id="descripcion" required>
         <br>
         <label>Imagen</label>
         <br>
         <input type="text" name="imagen" id="imagen" required>
-        <input type="file" name="archivo" id="archivo" single >
+        <!-- <input type="file" name="archivo" id="archivo" single > -->
+        <div class="btn-upload">
+        <label id="btn-subir-archivo">
+            <input type="file"/>Subir Archivo
+        </label>
+        
         <button class="btn-form" type="submit">Crear</button>
+        </div>
     </form>
 </div>
 </div>
