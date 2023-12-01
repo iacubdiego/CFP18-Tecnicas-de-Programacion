@@ -12,7 +12,14 @@ const controlador = {
         res.render("about")
     },
     gallery: (req, res) => {
-        res.render("gallery",{userList})
+        let cirugiasMostrar = []
+        for (let i = 0; i < userList.length; i++) {
+            const element = userList[i];
+            if (element.categoria==="publicar") {
+                cirugiasMostrar.push(element)
+            }
+        }
+        res.render("gallery",{cirugiasMostrar})
     }
 };
 

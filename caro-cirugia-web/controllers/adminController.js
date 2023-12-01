@@ -4,11 +4,12 @@ const path = require('path');
 const userListPath = path.resolve(__dirname, '../models/users.json');
 const userList = JSON.parse(fs.readFileSync(userListPath, 'utf8'));
 
+
 const adminController = {
     getCirugiaById: (req, res) => {
         let id = req.params.id;
-
-        res.render('admin/adminByid', {userList, id});
+        let getCirugiaById = userList.find(getCirugiaById => getCirugiaById.id == id);
+        res.render('admin/adminByid', {userList, id,getCirugiaById});
 
         // res.send('Es la Cirugia: ' + id);
     },
@@ -25,11 +26,6 @@ const adminController = {
 
         res.redirect('/admin');
     },
-    editCirugias: (req, res) => {
-        let id = req.params.id;
-        let getCirugiaById = userList.find(getCirugiaById => getCirugiaById.id == id);
-        res.render('admin/adminEdit', {getCirugiaById});
-    },
 
     uploadCirugias: (req, res) => {
         let id = req.params.id;
@@ -42,6 +38,7 @@ const adminController = {
             if (element.id===id) {
                 userList[i] = newCirugia           
             }
+            
         }
 
         fs.writeFileSync(userListPath, JSON.stringify(userList, null, 2));
@@ -50,7 +47,18 @@ const adminController = {
     },
     deleteCirugias: (req, res) => {
         let id = req.params.id;
+        
+        for (let i = 0; i < userList.length; i++) {
+            const element = userList[i];
+            if (element.id===id) {
+                userList.splice(i,1)
+            }
 
+        }
+
+        fs.writeFileSync(userListPath, JSON.stringify(userList, null, 2));
+
+        res.redirect('/admin');
 
     },
 };

@@ -11,8 +11,26 @@
     <%- include ('../partials/header.ejs') %>
 
     <div class="formulario">
+        <form class="formu" action="/admin/<%= getCirugiaById.id %>/?_method=PUT" method="post">
+            <label>Descripcion</label>
+            <br>
+            <input type="text" placeholder=<%= getCirugiaById.descripcion %> name="descripcion" id="descripcion" required>
+            <br>
+            <label>Imagen</label>
+            <br>
+            <input type="text" placeholder=<%= getCirugiaById.imagen %> name="imagen" id="imagen" required>
+            <br>
+            <button type="submit"  >EDITAR</button>
+    
+        </form>
+        <br>
+        <a href="/admin">CANCELAR</a>
+    
+    </div>
+<!--     
+    <div class="formulario">
     <form class="formu" action="/?_method=PUT" method="post">
-        <label>Descripcion</label>
+        <label>Descripción</label>
         <br>
         <input type="text" placeholder=<%= userList.descripcion %> name="descripcion" id="descripcion" required>
         <br>
@@ -22,7 +40,7 @@
         
         
     </form>
-    <a href="/admin/<%= id %>/adminEdit">EDITAR</a>
+    <a href="/admin/<%= id %>/adminEdit">EDITAR</a> -->
 <!--     
     <button class="btn-form" a href="admin/:id/adminEdit">EDITAR</button>
     

@@ -1,82 +1,55 @@
 [
   {
-    "descripcion": "grgergre",
-    "imagen": "vfgaf",
-    "id": "1"
+    "id": "1",
+    "imagen": "./img/img1.png",
+    "descripcion": "imagen1",
+    "categoria": "publicar"
   },
   {
     "id": "2",
     "imagen": "./img/img2.png",
-    "descripcion": "imagen2"
+    "descripcion": "imagen2",
+    "categoria": "publicar"
   },
   {
     "id": "3",
     "imagen": "./img/img3.png",
-    "descripcion": "imagen3"
+    "descripcion": "imagen3",
+    "categoria": "publicar"
   },
   {
     "id": "4",
     "imagen": "./img/img4.png",
-    "descripcion": "imagen4"
+    "descripcion": "imagen4",
+    "categoria": "publicar"
   },
   {
     "id": "5",
     "imagen": "./img/img5.png",
-    "descripcion": "imagen5"
+    "descripcion": "imagen5",
+    "categoria": "publicar"
   },
   {
+    "descripcion": "vfr",
+    "imagen": "tgtgtg",
     "id": "6",
-    "imagen": "./img/img6.png",
-    "descripcion": "imagen6"
+    "categoria": "publicar"
   },
   {
     "id": "7",
     "imagen": "./img/img7.png",
-    "descripcion": "imagen7"
+    "descripcion": "imagen7",
+    "categoria": null
   },
   {
     "id": "8",
     "imagen": "./img/img8.png",
-    "descripcion": "imagen8"
+    "descripcion": "imagen8",
+    "categoria": null
   },
   {
-    "id": "imagen9",
-    "descripcion": "imagen",
-    "imagen": "validacion"
-  },
-  {
-    "id": "imagen 10",
-    "descripcion": "imagen",
-    "imagen": "katy"
-  },
-  {
-    "id": "imagen 11",
-    "descripcion": "katy",
-    "imagen": "validacion"
-  },
-  {
-    "id": "imagen9",
-    "descripcion": "katy",
-    "imagen": "katy"
-  },
-  {
-    "id": "imagen 11",
-    "descripcion": "imagen",
-    "imagen": "./public/img/descarga.jpg"
-  },
-  {
-    "id": "imagen 10",
-    "descripcion": "imagen",
-    "imagen": "./img/descarga.jpg"
-  },
-  {
-    "descripcion": "grgergre",
-    "imagen": "vfgaf",
-    "id": "1"
-  },
-  {
-    "descripcion": "grgergre",
-    "imagen": "vfgaf",
-    "id": "1"
+    "id": "11",
+    "descripcion": "gchgchc",
+    "imagen": "./img/img9.png"
   }
 ]
