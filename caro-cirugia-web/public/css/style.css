@@ -283,8 +283,9 @@ footer {
   position: relative;
   /* top: 200px; */
   height: 250px;
-  background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(203, 40, 255));
+  /* background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(203, 40, 255)); */
   /* background: #CB28FF; */
+  background: #6A12C2;
   /* background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(255, 255, 255)); */
   /* background-image: linear-gradient(to bottom right, rgb(190, 166, 218), #39363D); */
   color: #ffffff;
@@ -306,6 +307,7 @@ footer h2 {
 footer li {
   padding-bottom: .5rem;
   cursor: pointer;
+  list-style: none;
 }
 
 footer li a {
