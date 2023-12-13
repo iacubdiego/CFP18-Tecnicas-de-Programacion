@@ -31,6 +31,7 @@
 }
 
 .btn-crud {
+    min-width: 80px;
     margin: 5px;
     padding: 4px;
     font-size: 12px;
@@ -41,6 +42,7 @@
     border: none;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #000;
+    text-decoration: none;
     transition: all .4s;
 }
 

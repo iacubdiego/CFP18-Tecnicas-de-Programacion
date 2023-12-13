@@ -20,11 +20,16 @@
 /* ------------------ NAVBAR ------------------------------------------- */
 
 .topnav {
+  width: 100%;
+  height: auto;
+  top: 0;
+  position: fixed;
   overflow: hidden;
   background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(203, 40, 255));
   /* background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(255, 255, 255)); */
   /* background-color: #333; */
-}
+  z-index: 200;
+  }
 
 .topnav a {
   float: left;
@@ -276,7 +281,7 @@
 /* ------------------- FOOTER ----------------------------------------*/
 footer {
   position: relative;
-  top: 200px;
+  /* top: 200px; */
   height: 250px;
   background-image: linear-gradient(to right, hsla(270, 83%, 41%, 1), rgb(203, 40, 255));
   /* background: #CB28FF; */
@@ -303,6 +308,13 @@ footer li {
   cursor: pointer;
 }
 
+footer li a {
+  padding-bottom: .5rem;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
 footer img {
   width: 100%;
   max-width: 180px;
@@ -310,7 +322,7 @@ footer img {
 }
 
 #svg-footer {
-  top: 200px;
+  top: 10px;
   position: relative;
 }
 

@@ -17,7 +17,7 @@
 				<img src=<%= userList[i].imagen %> alt="" class="image-crud" />
                 <div class="btn-actions">
                     
-                        <label>Descripcion</label>
+                        <label>Descripción</label>
                         <br>
                         <label><%= userList[i].descripcion %></label>
                         <br>
@@ -28,7 +28,7 @@
                         <label><%= userList[i].imagen %></label>
                         <br>
                         <!-- <input type="text" placeholder=<%= userList[i].imagen %> name="imagen" id="imagen" required> -->
-                        <a href="./admin/<%= userList[i].id %>">EDITAR</a>
+                        <a  class="btn-crud" href="./admin/<%= userList[i].id %>">EDITAR</a>
 
                     <form action="/admin/<%= userList[i].id %>?_method=DELETE" method="post">
 
